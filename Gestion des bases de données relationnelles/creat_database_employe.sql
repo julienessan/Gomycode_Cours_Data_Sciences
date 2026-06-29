@@ -22,8 +22,7 @@ CREATE TABLE projet (
 
 CREATE TABLE Employe_Projet (
 	Employes_Num_E INT FOREIGN KEY  REFERENCES employes (Num_E),
-	Departement_Num_S INT FOREIGN KEY  REFERENCES Departement (Num_S),
-	Participation INT PRIMARY KEY (Employes_Num_E, Departement_Num_S),
+	Projet_Num_P INT FOREIGN KEY  REFERENCES projet (Num_P),
 	Rôle VARCHAR(225) );
 
 
